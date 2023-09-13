@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mainContainer">
+        <nav class="mainNav">
+            <h1 class="text-white">
+                Just
+                <span class="text-orange">Dessert</span>
+            </h1>
+            <div>
+                <button class="btn btn-orange" id="joinBtn">Join</button>
+                <button class="btn btn-blue ">Login</button>
+            </div>
+        </nav>
+        <nav class="searchNav">
+
+            <div class="searchGroup">
+                <input type="text" name="search" id="searchInput" placeholder="Buscar">
+                <button class="btn btn-blue" onclick="search()">ok</button>
+            </div>
+
+            <div class="imgCard">
+                <img src="./assets/imgs/cake.png" alt="cake">
+                <p>Cakes</p>
+            </div>
+            <div class="imgCard">
+                <img src="./assets/imgs/cookie.png" alt="cookie">
+                <p>Cookies</p>
+            </div>
+            <div class="imgCard">
+                <img src="./assets/imgs/ice-cream.png" alt="ice-cream">
+                <p>Ice Cream</p>
+            </div>
+            <div class="imgCard">
+                <img src="./assets/imgs/pie.png" alt="pie">
+                <p>Pie</p>
+            </div>
+        </nav>
+        <section class="mainContent">
+
+            <div class="leftContent">
+                <h2>Recipe of the Day</h2>
+                <div class="recipeContainer">
+                    <img src="./assets/imgs/orange-tart.jpg" alt="orange-tart">
+                    <div>
+                        <p>Orange Tea Jelly Tart</p>
+                        <div>
+                            <img onclick="like(this)" src="./assets/imgs/heart.png" alt="heart">
+                            <p>68</p>
+                        </div>
+                    </div>
+                    <p>By: <a href="">yuripiano</a></p>
+                </div>
+                <p>
+                    <a href="">See Full Recipe</a>
+                </p>
+            </div>
+            <div class="rightContent">
+                <h3>Recipes for you:</h3>
+                <hr>
+                <div class="recipeContainer">
+                    <img src="./assets/imgs/macarons.jpg" alt="macarons">
+                    <div>
+                        <p>Macarons</p>
+                        <div>
+                            <img onclick="like(this)" src="./assets/imgs/heart.png" alt="heart">
+                            <p>212</p>
+                        </div>
+                    </div>
+                    <p>By: <a href="">EmilyW</a></p>
+                </div>
+                <div class="recipeContainer">
+                    <img src="./assets/imgs/creme-brulee.jpg" alt="creme-brulee">
+                    <div>
+                        <p>Créme Brûlée</p>
+                        <div>
+                            <img onclick="like(this)" src="./assets/imgs/heart.png" alt="heart">
+                            <p>33</p>
+                        </div>
+                    </div>
+                    <p>By: <a href="">MarisoG</a></p>
+                </div>
+                
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

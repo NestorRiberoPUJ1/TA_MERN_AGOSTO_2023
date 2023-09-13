@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.mainContainer {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.mainNav {
+    height: 56px;
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 32px;
+    box-sizing: border-box;
+}
+
+.searchNav {
+    height: 156px;
+    background-color: rgb(252, 194, 160);
+    padding: 8px 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.mainContent {
+    display: flex;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: dodgerblue;
+}
+
+.text-white {
+    color: white
+}
+
+.text-orange {
+    color: orange;
+}
+
+.btn {
+    padding: 4px 8px;
+    margin: 0px 4px;
+    box-shadow: 4px 4px black;
+    font-weight: bolder;
+}
+
+.btn-blue {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.btn-orange {
+    background-color: orange;
+    color: black;
+}
+
+.searchGroup {
+    height: 24px;
+    display: flex;
+}
+
+.searchGroup>.btn {
+    margin: 0px;
+    height: 28px;
+}
+
+#searchInput {
+    height: 100%;
+}
+
+
+.imgCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgCard>img {
+    height: 96px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+.leftContent {
+    flex: 3;
+    background-color: rgb(235, 235, 235);
+    padding: 16px;
+}
+
+.rightContent {
+    flex: 2;
+    padding: 16px;
+}
+
+.recipeContainer {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.recipeContainer>img {
+    width: 100%;
+}
+
+.recipeContainer>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipeContainer>div>div {
+    display: flex;
+    align-items: center;
+}
+.recipeContainer>div>p{
+    font-size: large;
+    font-weight: bold;
+}
+
+.recipeContainer>div>div>img {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.leftContent >p{
+    text-align: center;
+}
+
+.rightContent>h3{
+    text-align: center;
+}
+.rightContent>hr{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hide{
+    display: none;
+}
