@@ -1,0 +1,29 @@
+.cardStyle {
+    width: 500px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    padding:8px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 8px;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.cardHeader > img{
+    margin-right: 16px;
+    background-color: white;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.cardStyle p{
+    font-weight: bolder;
+}
