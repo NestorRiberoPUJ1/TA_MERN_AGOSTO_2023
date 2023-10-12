@@ -1,0 +1,35 @@
+.formData {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
+    padding: 16px;
+    box-sizing: border-box;
+    outline: 2px solid black;
+    margin: 16px auto;
+}
+
+.formInput {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.formInput>div {
+    flex: 1;
+    display: flex;
+}
+
+.formInput>div>input {
+    flex: 1;
+    margin-left: 4px;
+}
+
+.formInput p {
+    margin: 0px;
+    color: red;
+}
