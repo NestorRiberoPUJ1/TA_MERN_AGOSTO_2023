@@ -1,5 +1,6 @@
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useState } from "react"
 import styles from "./Formulario.module.css"
+import UserCard from "../UserCard/UserCard";
 
 
 const defaultData = {
@@ -12,6 +13,8 @@ const defaultData = {
 
 const Formulario = () => {
     const [data, setData] = useState(defaultData);
+    const [users, setUsers] = useState([]);
+    const [filter, setFilter] = useState("");
 
     const handleDataChange = (e) => {
         setData((prev) => {
@@ -24,7 +27,20 @@ const Formulario = () => {
     const handleFormSubmit = (e) => {
         e.preventDefault();
         console.log(data);
+        setUsers((prevData) => [...prevData, data]);
         setData(defaultData);
+    }
+
+    useEffect(() => {
+        console.log("users:", users);
+    }, [users])
+
+    const populateUsers = (filter) => {
+        return users.filter((item)=>item.apellido.includes(filter)).map((item, idx) => {
+            return (
+                <UserCard key={idx} {...item} />
+            )
+        })
     }
 
     return (
@@ -118,6 +134,12 @@ const Formulario = () => {
             {data.email}
             {data.password}
             {data.confirm}
+
+            <input type="text" value={filter} onChange={(e) => setFilter(e.target.value)} />
+            <ul>
+                {populateUsers(filter)}
+            </ul>
+
         </Fragment>
     )
 }
