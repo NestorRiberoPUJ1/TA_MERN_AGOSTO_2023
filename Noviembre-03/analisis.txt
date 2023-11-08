@@ -1,0 +1,31 @@
+---
+Modelos:
+
+
+    usuario:
+        username
+        email
+        password
+
+    proyecto:
+        nombre -> obligatorio minimo 6 caracteres.
+        fecha Limite -> obligatorio
+        estado: para iniciar / en progreso /completado -> por defecto es "para iniciar"
+
+Vistas:
+
+    /:  
+        Muestra todos los proyectos separados por columnas segun el estado
+        Al dar click en start project cambia el estado de "para  iniciar" a "en progreso"
+        Al dar click en mover a completado cambia el estado de "en progreso" a "completado" 
+        El botón "Eliminar proyecto" ("Remove Project") debería eliminar el proyecto.
+
+    
+    /proyect/new:  
+        Muestra formulario para crear un nuevo proyecto, incluye entradas del nombre y la fecha limite. Estado por defecto : "para iniciar"
+    
+    /sign_in:
+        Login y registro
+
+
+
