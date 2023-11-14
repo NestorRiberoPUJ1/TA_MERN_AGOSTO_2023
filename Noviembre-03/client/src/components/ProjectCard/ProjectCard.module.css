@@ -1,0 +1,7 @@
+.projectCard {
+    outline: 2px solid black;
+    margin: 16px;
+    padding: 8px;
+    width: 90%;
+    box-sizing: border-box;
+}

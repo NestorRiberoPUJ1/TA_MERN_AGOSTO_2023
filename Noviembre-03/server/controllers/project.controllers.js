@@ -18,7 +18,7 @@ module.exports.createProject = async (req, res) => {
 
 module.exports.getProjects = async (req, res) => {
     try {
-        const projects = await Project.find();
+        const projects = await Project.find().sort({ due_time: 1 });
         res.json(projects);
     } catch (error) {
         res.status(500).json(error);

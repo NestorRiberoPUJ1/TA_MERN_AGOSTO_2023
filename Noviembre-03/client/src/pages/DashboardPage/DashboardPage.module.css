@@ -1,0 +1,36 @@
+.mainTitle {
+    text-align: center;
+}
+
+
+.mainContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 48px;
+}
+
+.mainContainer>div {
+    flex: 1;
+    outline: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.mainContainer>div>h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin: 0px;
+}
+
+.mainContainer>div>h2[color="blue"] {
+    background-color: lightblue;
+}
+.mainContainer>div>h2[color="yellow"] {
+    background-color: lightyellow;
+}
+.mainContainer>div>h2[color="green"] {
+    background-color: lightgreen;
+}
